@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -37,7 +42,7 @@ hist(StepsByDay$steps,
      ylab = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 Calculate the mean of the steps by day
 
@@ -76,7 +81,7 @@ plot(StepsByInterval$steps ~ StepsByInterval$interval,
      ylab = "Avg Nbr of Steps by Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 
 
 ## Imputing missing values
 
@@ -106,7 +111,7 @@ hist(StepsByDayNoNA$steps,
      ylab = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
 
 Calculate the mean of the steps by day (no impact of imputing the missing data)
 
@@ -156,4 +161,4 @@ ggplot(StepsByIntervalWeekDay, aes(interval, steps))+
         facet_grid(daytype ~ .)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-17-1.png) 
+![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png) 
